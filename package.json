@@ -1,0 +1,33 @@
+{
+  "name": "@jgarber/component-name",
+  "version": "0.1.0",
+  "description": "Describe <component-name> here…",
+  "keywords": [
+    "custom elements",
+    "web components"
+  ],
+  "homepage": "https://github.com/jgarber623/component-name",
+  "bugs": "https://github.com/jgarber623/component-name/issues",
+  "license": "MIT",
+  "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "files": [
+    "component-name.js",
+    "example/*"
+  ],
+  "type": "module",
+  "main": "component-name.js",
+  "directories": {
+    "example": "example"
+  },
+  "repository": "github:jgarber623/component-name",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "npx http-server ."
+  },
+  "devDependencies": {
+    "@jgarber/eslint-config": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
