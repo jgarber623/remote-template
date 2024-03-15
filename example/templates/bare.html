@@ -1,0 +1,59 @@
+<article class="chapter">
+  <header class="chapter-header">
+    <slot name="title"></slot>
+  </header>
+  <div class="chapter-content">
+    <slot></slot>
+  </div>
+  <footer class="chapter-footer">
+    <small>An excerpt from Herman Melville’s 1851 novel <a href="https://en.wikipedia.org/wiki/Moby-Dick"><cite>Moby Dick; or, The Whale</cite></a>.</small>
+  </footer>
+</article>
+
+<style>
+  .chapter {
+    background-color: #f9eae5;
+    border-radius: 0.5rem;
+    color: #333;
+    font-family: Georgia, serif;
+    padding: 1.5rem;
+  }
+
+  .chapter-header {
+    margin-bottom: 1.5rem;
+
+    ::slotted(*) {
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+  .chapter-content ::slotted(p) {
+    line-height: 1.5 !important;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .chapter-footer {
+    small {
+      background-color: #fff;
+      border-radius: 0.25rem;
+      display: block;
+      font-size: 0.75rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    a {
+      color: #c00;
+
+      &:focus,
+      &:hover {
+        color: #f00;
+      }
+    }
+
+    cite {
+      font-style: italic;
+    }
+  }
+</style>

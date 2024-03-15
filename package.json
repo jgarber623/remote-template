@@ -1,25 +1,26 @@
 {
-  "name": "@jgarber/component-name",
+  "name": "@jgarber/remote-template",
   "version": "0.1.0",
-  "description": "Describe <component-name> here…",
+  "description": "Describe <remote-template> here…",
   "keywords": [
     "custom elements",
-    "web components"
+    "web components",
+    "template"
   ],
-  "homepage": "https://github.com/jgarber623/component-name",
-  "bugs": "https://github.com/jgarber623/component-name/issues",
+  "homepage": "https://github.com/jgarber623/remote-template",
+  "bugs": "https://github.com/jgarber623/remote-template/issues",
   "license": "MIT",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
   "files": [
-    "component-name.js",
+    "remote-template.js",
     "example/*"
   ],
   "type": "module",
-  "main": "component-name.js",
+  "main": "remote-template.js",
   "directories": {
     "example": "example"
   },
-  "repository": "github:jgarber623/component-name",
+  "repository": "github:jgarber623/remote-template",
   "scripts": {
     "lint": "eslint .",
     "start": "npx http-server ."
