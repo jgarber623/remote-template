@@ -13,7 +13,7 @@ export default class MobyDick extends HTMLElement {
     this[`on${event.type}`](event);
   }
 
-  onload(event) {
+  onload() {
     const shadow = this.attachShadow({ mode: "open" });
     shadow.append(this.querySelector("template").content.cloneNode(true));
 

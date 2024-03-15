@@ -15,8 +15,8 @@ export default class RemoteTemplate extends HTMLElement {
     const url = new URL(this.getAttribute("src"), document.baseURI);
     const response = await fetch(url, {
       headers: {
-        accept: "text/template+html, text/html"
-      }
+        accept: "text/template+html, text/html",
+      },
     });
 
     if (!response.ok) {
@@ -68,7 +68,7 @@ export default class RemoteTemplate extends HTMLElement {
 
     let eventOptions = {
       bubbles: true,
-      composed: true
+      composed: true,
     };
 
     if (eventType === "error") {
