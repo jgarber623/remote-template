@@ -11,18 +11,18 @@
   "bugs": "https://github.com/jgarber623/remote-template/issues",
   "license": "MIT",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "type": "module",
   "files": [
     "remote-template.js",
     "example/*"
   ],
-  "type": "module",
-  "main": "remote-template.js",
+  "exports": "./remote-template.js",
   "directories": {
     "example": "example"
   },
   "repository": "github:jgarber623/remote-template",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "npx eslint .",
     "start": "npx http-server ."
   },
   "devDependencies": {
