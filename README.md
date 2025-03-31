@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This project has moved to [codeberg.org/jgarber/remote-template](https://codeberg.org/jgarber/remote-template).
+
 # `<remote-template>` Web Component
 
 **A dependency-free [Web Component](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components) that fetches a URL and appends the response to a [`<template>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).**
